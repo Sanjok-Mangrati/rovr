@@ -1,0 +1,209 @@
+.rovr__header-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 380px;
+    background: var(--color-secondary-bg);
+    font-family: var(--font-family);
+}
+
+.rovr__header-container_left-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    margin-left: 25px;
+}
+
+.rovr__header-container_left-section_title h1 {
+    font-size: 32px;
+}
+
+
+.rovr__header-container_left-section_buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.rovr__header-container_left-section_buttons .bookbtn {
+    display: flex;
+    justify-content: center;
+    padding: 8px 20px;
+    width: 200px;
+    font-weight: 500;
+    text-decoration: none;
+    background: #3CEF83;
+    color: var(--color-bg);
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.25);
+    cursor: pointer;
+    transition: background, padding, 0.25s;
+}
+
+.rovr__header-container_left-section_buttons .bookbtn:hover {
+    background: #39e27d;
+}
+
+.rovr__header-container_left-section_buttons .bookbtn:active {
+    color: var(--color-bg);
+    padding: 8px 18px;
+}
+
+.rovr__header-container_left-section_buttons span {
+    display: flex;
+    margin-top: 10px;
+}
+
+.rovr__header-container_left-section_buttons .callbtn {
+    display: flex;
+    margin-left: 10px;
+}
+
+
+.rovr__header-container_left-section_buttons .callbtn:active {
+    color: var(--color-bg)
+}
+
+
+.rovr__header-container_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rovr__header-container_image img {
+    height: 370px;
+}
+
+
+
+
+
+
+/* responsiveness */
+@media screen and (max-width: 840px){
+
+    .rovr__header-container_left-section_title h1 {
+        font-size: 28px;
+    }
+
+    .rovr__header-container_image img {
+        height: 340px;
+    }
+
+}
+
+@media screen and (max-width: 740px){
+
+    .rovr__header-container_left-section_title h1 {
+        font-size: 24px;
+    }
+
+    .rovr__header-container_image img {
+        height: 300px;
+    }
+
+}
+
+@media screen and (max-width: 640px){
+
+    .rovr__header-container_left-section_title h1 {
+        font-size: 18px;
+    }
+
+    .rovr__header-container_image img {
+        height: 250px;
+    }
+
+    .rovr__header-container_left-section_buttons .bookbtn {
+        display: flex;
+        justify-content: center;
+        padding: 8px 15px;
+        width: 150px;
+    }
+
+    .rovr__header-container_left-section_buttons span {
+        display: flex;
+        margin-top: 10px;
+        font-size: 12px;
+    }
+    
+    .rovr__header-container_left-section_buttons .callbtn {
+        display: flex;
+        margin-left: 8px;
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 540px){
+
+    .rovr__header-container_left-section_title h1 {
+        font-size: 18px;
+    }
+
+    .rovr__header-container_image img {
+        height: 220px;
+    }
+
+    .rovr__header-container_left-section_buttons .bookbtn {
+        display: flex;
+        justify-content: center;
+        padding: 8px 10px;
+        width: 120px;
+        font-size: 12px;
+    }
+
+    .rovr__header-container_left-section_buttons span {
+        display: flex;
+        margin-top: 10px;
+        font-size: 12px;
+    }
+    
+    .rovr__header-container_left-section_buttons .callbtn {
+        display: flex;
+        margin-left: 8px;
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+
+    .rovr__header-container {
+        display: flex;
+        justify-content: center;
+        height: 500px;
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url('../../assets/background.jpg');
+        background-position: center;
+        background-size: cover;
+        font-family: var(--font-family);
+    }
+    
+    .rovr__header-container_left-section {
+        margin-left: 10px;
+    }
+
+    
+    .rovr__header-container_left-section_title h1 {
+        font-size: 27px;
+        color: var(--color-text);
+    }
+
+    .rovr__header-container_left-section_buttons span {
+        color: var(--color-text);
+        margin-top: 8px;
+    }
+
+    .rovr__header-container_left-section_buttons .callbtn {
+        color: var(--color-text);
+    }
+
+
+    .rovr__header-container_image {
+        display: none;
+    }
+
+
+}
